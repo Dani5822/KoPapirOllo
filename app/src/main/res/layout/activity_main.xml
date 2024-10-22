@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageviewplayer"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/paper" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A te választásod"
+        android:textSize="40sp"
+        android:textAlignment="center"/>
+    <ImageView
+        android:id="@+id/imageviewcomputer"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/rock" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A gép választása"
+        android:textSize="40sp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Eredmény: Ember: 0 Computer: 0"
+        android:id="@+id/textviewresult"
+        android:textAlignment="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Kő"
+            android:textSize="25sp"
+            android:id="@+id/buttonko"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Papír"
+            android:textSize="25sp"
+            android:id="@+id/buttonpapir"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Olló"
+            android:textSize="25sp"
+            android:id="@+id/buttonollo"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
